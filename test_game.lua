@@ -63,7 +63,7 @@ function test_handcard1()
     handcards:set_weaves({})
     handcards:set_cards{14, 14, 14, 14, 15, 15, 16, 16, 31, 31, 31}
     local result = alg_hucards.check_handcards(handcards)
-    print(#result:get_result())
+    result:print()
 end
 
 function test_handcard2()
@@ -98,6 +98,6 @@ end
 
 -- test_handcard(10000)
 -- test_13yao()
-test_handcard()
+test_handcard1()
 -- test_handcard1()
 -- test_handcard2()
